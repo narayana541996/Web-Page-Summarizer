@@ -2,6 +2,8 @@ import os
 
 import bs4 as bs
 
+import pandas as pd
+
 import re
 
 def fetch_html(path):
@@ -15,9 +17,9 @@ def fetch_html(path):
                         # print('entry2: ',entry2.path)
                         yield entry2.path
 
-def launch_make_dataset(features, DataFrame, make_dataset, raw_data_path = r'Insupport-dataset', dataset_path = None):
+def launch_make_dataset(features, make_dataset, raw_data_path = r'Insupport-dataset', dataset_path = None):
     ''' Launches make_dataset function in dataset_maker. '''
-    DataFrame(columns= features).to_csv(dataset_path, mode= 'w', encoding= 'ISO-8859-1')
+    pd.DataFrame(columns= features).to_csv(dataset_path, mode= 'w', encoding= 'ISO-8859-1')
     for url in fetch_html(raw_data_path):
       # print('url: ',url)
       with open(url, encoding='ISO-8859-1') as page:
@@ -70,12 +72,21 @@ def find_input_type_number(element, type, feature, feature_dict):
         feature_dict[feature][-1] += 1
     return feature_dict
 
+def find_child_number(element, child, feature, feature_dict):
+    ''' Find number of 'child' elements in element's children and updates feature_dict.
+    returns the updated feature_dict.  '''
+    feature_dict[feature].append(0)
+    for button in element.findAll(child):
+        feature_dict[feature][-1] += 1
+    return feature_dict
+
 def find_button_number(element, feature, feature_dict):
     ''' Find number of child buttons for the element and updates the feature in feature_dict.
     returns the updated feature_dict. '''
-    feature_dict[feature].append(0)
-    for button in element.findAll('button'):
-        feature_dict[feature][-1] += 1
+    # feature_dict[feature].append(0)
+    # for button in element.findAll('button'):
+    #     feature_dict[feature][-1] += 1
+    feature_dict = find_child_number(element, 'button', feature, feature_dict)
     for inp in element.findAll('input',{'type' : ['button', 'submit']}):
         # print('type: ',inp.attrs['type'])
         feature_dict[feature][-1] += 1
@@ -89,14 +100,38 @@ def find_class(element, feature, feature_dict):
     if 'data-attribute' in element.attrs.keys():
       if element.attrs['data-attribute'].lower().strip() == re.findall(r'^\S+_', feature)[0].strip('_'):
         feature_dict[feature][-1] = 1
-    else:
-      for child in element.findChildren():
-        if 'data-attribute' in child.attrs.keys():
-          if child.attrs['data-attribute'].lower().strip() == re.findall(r'^\S+_', feature)[0].strip('_'):
-            feature_dict[feature][-1] = 1
-            break
+        return feature_dict
+    # else:
+    #   for child in element.findChildren():
+    #     if 'data-attribute' in child.attrs.keys():
+    #       if child.attrs['data-attribute'].lower().strip() == re.findall(r'^\S+_', feature)[0].strip('_'):
+    #         feature_dict[feature][-1] = 1
+    #         return feature_dict
+      
+      # for parent in element.findParents():
+      #   if 'data-attribute' in parent.attrs.keys():
+      #     if parent.attrs['data-attribute'].lower().strip() == re.findall(r'^\S+_', feature)[0].strip('_'):
+      #       feature_dict[feature][-1] = 1
+      #       return feature_dict
     return feature_dict
 
+def search_previous_label(element, search_value, feature, feature_dict):
+    ''' Checks if previous label is sort and updates the feature_dict.
+    returns the updated feature_dict. '''
+    feature_dict[feature].append(0)
+    label = element.find_previous_sibling('label')
+    if label:
+        if label.text.strip().lower() == search_value:
+          feature_dict[feature][-1] = 1
+          return feature_dict
+    return feature_dict
+
+def write_dataset(feature_dict, log_list, dataset_path, log_path):
+  data=pd.DataFrame(feature_dict)
+  data.to_csv(dataset_path, mode= 'a', encoding= 'ISO-8859-1', header= False)
+  with open(log_path, mode = 'w', encoding= 'ISO-8859-1') as f:
+    for item in log_list:
+      f.write(f'{log_list.index(item)}) {item}\n')
 
 def func_map(feature, element, feature_dict):
 

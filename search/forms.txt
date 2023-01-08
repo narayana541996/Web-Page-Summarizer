@@ -1,0 +1,639 @@
+0) <form action="https://www.wyndhamhotels.com/hotels/illinois-usa?brand_id=ALL&amp;checkInDate=11/7/2020&amp;checkOutDate=11/8/2020&amp;useWRPoints=false&amp;children=0&amp;adults=1&amp;rooms=1&amp;loc=ChIJGSZubzgtC4gRVlkRZFCCFX8&amp;sessionId=1604790760#" class="hidden-xs hidden-sm hidden-md" data-attribute="search" name="booking-bar-hidden" role="search">
+  <input id="autocomplete" name="autocomplete" type="hidden" value=""/>
+
+  <input id="from" name="fromDate" type="hidden" value="11/7/2020"/>
+  <input id="to" name="toDate" type="hidden" value="11/8/2020"/>
+
+  <input data-rewards-error="When searching by Wyndham Rewards, you must choose one room." id="numOfRooms" itemprop="numberOfRooms" name="Rooms" type="hidden" value="1"/>
+  <input id="numOfAdults" name="Adults" type="hidden" value="1"/>
+  <input id="numOfChildren" name="Children" type="hidden" value="0"/>
+  <input id="childAges" name="ChildAges" type="hidden" value=""/>
+
+  <input id="special-rate-drop" name="specialRateDrop" type="hidden" value=""/>
+  <input id="corp-code-data" name="corpCodeData" type="hidden" value=""/>
+  <input id="group-code-data" name="groupCodeData" type="hidden" value=""/>
+  <input id="rate-code-data" name="rateCodeData" type="hidden" value=""/>
+  <input id="promotional-code-data" name="promotionalCodeData" type="hidden" value=""/>
+
+  <input id="redeemWRPoint" name="redeemWRPoint" type="checkbox"/>
+</form>
+1) <form action="https://www.wyndhamhotels.com/hotels/illinois-usa?brand_id=ALL&amp;checkInDate=11/7/2020&amp;checkOutDate=11/8/2020&amp;useWRPoints=false&amp;children=0&amp;adults=1&amp;rooms=1&amp;loc=ChIJGSZubzgtC4gRVlkRZFCCFX8&amp;sessionId=1604790760#" class="booking-bar-form booking-bar-main" data-parsley-validate="" method="post" name="booking-bar-form" novalidate="" role="search">
+  <nav class="add-top booking-bar stop" id="bookingBar__main">
+    <div class="container inner-container">
+      
+
+      <div class="row">
+
+        
+
+        
+
+        
+
+        
+
+        <div class="col-xs-24 booking-input-container destination-container destination-input-container">
+          <input aria-invalid="false" aria-label="Enter destination" aria-required="true" autocomplete="off" class="destination ui-autocomplete-input" data-invalid-error="Invalid entry." data-limit="10" data-location-error="Location is invalid" data-parsley-minlength="3" data-parsley-required-message="This field is required." name="destination" placeholder="Enter destination" required="" type="text"/>
+
+          <span aria-hidden="false" aria-label="Clear search" class="destination-container__clear-input" role="button" style="display: block;" tabindex="0">
+            <svg class="icon-close">
+              <title>Clear search</title>
+              <use xlink:href="/etc/designs/wyndham-tablet/sprites/svg-sprite.svg#close"></use>
+            </svg>
+          </span>
+
+          <div class="ui-autocomplete-container" data-all-location-types="true" data-exclusion="true" data-exclusion-list="d2VzdGluO2hpbHRvbjttYXJyaW90dA==" data-max-results="5" id="destAutocomplete">
+          <ul class="ui-menu ui-widget ui-widget-content ui-autocomplete ui-front" id="ui-id-1" style="display: none; width: 296px; position: relative; top: 0px; left: 0px;" tabindex="0"><li class="ui-autocomplete-geolocation ui-menu-item-wrapper">Find Hotels Near Me</li><li aria-label="establishment:Points of Interest : Illinois, USA" class="ui-menu-item"><div class="ui-menu-item-wrapper" id="ui-id-3" tabindex="-1"><span class="highlight"><strong>Illinois</strong></span>, USA</div></li><li aria-label="establishment:Points of Interest : Illinois Avenue, Norfolk, VA, USA" class="ui-menu-item"><div class="ui-menu-item-wrapper" id="ui-id-4" tabindex="-1"><span class="highlight"><strong>Illinois</strong> Avenue</span>, Norfolk, VA, USA</div></li><li aria-label="establishment:Points of Interest : West Illinois Avenue, Dallas, TX, USA" class="ui-menu-item"><div class="ui-menu-item-wrapper" id="ui-id-5" tabindex="-1"><span class="highlight">West <strong>Illinois</strong> Avenue</span>, Dallas, TX, USA</div></li><li aria-label="establishment:Points of Interest : Illinois Road, Fort Wayne, IN, USA" class="ui-menu-item"><div class="ui-menu-item-wrapper" id="ui-id-6" tabindex="-1"><span class="highlight"><strong>Illinois</strong> Road</span>, Fort Wayne, IN, USA</div></li><li aria-label="establishment:Points of Interest : East Illinois Street, Chicago, IL, USA" class="ui-menu-item"><div class="ui-menu-item-wrapper" id="ui-id-7" tabindex="-1"><span class="highlight">East <strong>Illinois</strong> Street</span>, Chicago, IL, USA</div></li></ul><ul class="ui-menu ui-widget ui-widget-content ui-autocomplete ui-front" id="ui-id-2" style="display: none;" tabindex="0"></ul></div>
+        </div>
+
+        <div class="col-xs-24 booking-input-container booking-dates-container" data-min-los="1">
+          <div class="btn-group booking-bar__booking-dates booking-dates" role="group">
+            <input aria-hidden="true" autocomplete="off" class="destination hidden-xs hidden-sm hidden-md ui-autocomplete-input" name="destination" placeholder="Enter destination" type="text"/>
+
+            <button class="btn check-in-button check-in calendar-button" data-dropdown=".booking-dates-dropdown" data-group="true" type="button">
+              <span class="title">Check In</span>
+
+              <div class="date">Sat, Nov 07 2020</div>
+
+              <span class="sr-only"></span>
+            </button>
+
+            <button class="btn check-out-button check-out calendar-button" data-dropdown=".booking-dates-dropdown" data-group="true" type="button">
+              <span class="title">Check Out</span>
+
+              <div class="date">Sun, Nov 08 2020</div>
+
+              <span class="sr-only"></span>
+            </button>
+          </div>
+        </div>
+
+        <div class="col-xs-24 booking-input-container rooms-and-guests-button-container" id="rooms-and-guests-dropdown-globalBookingBtn">
+          <button class="has-caret mask rooms-and-guests-button rooms-and-guests" data-dropdown=".rooms-and-guests-dropdown" type="button">
+            <span class="rooms-and-guests-label rooms-label">
+              <strong><span class="number">1</span></strong>
+
+              <span class="singular">Room</span><span class="plural hidden">Rooms</span>,
+            </span>
+
+            <span class="rooms-and-guests-label guests-label">
+              <strong><span class="number">1</span></strong>
+
+              <span class="singular">Guest</span><span class="plural hidden">Guests</span>
+            </span>
+
+            <span class="sr-only"></span>
+          </button>
+        </div>
+
+        <div class="col-xs-24 booking-input-container more-options">
+          <button class="has-caret mask more-options-button" data-dropdown=".more-options-dropdown" data-label="Special Rates" type="button">
+            <span class="more-options__label">Special Rates</span>
+
+            <span class="sr-only"></span>
+          </button>
+        </div>
+
+        
+
+        <div class="col-xs-24 booking-input-container search-button-container">
+          <button class="search-btn btn-primary">Search</button>
+        </div>
+
+        
+      </div>
+
+
+
+      
+
+      
+
+      
+
+      
+
+      <div aria-describedby="datepickerNavInstructions" aria-live="polite" class="booking-dates-dropdown dropdown-container" data-button="" role="grid"><span class="arrow-up"></span>
+        <div class="sr-only" id="datepickerNavInstructions"></div>
+
+        <div class="dropdown-overflow">
+          <div class="datepicker-container"></div>
+
+          <div class="hidden-sm hidden-md save-cancel-container clearfix">
+            <div class="col-xs-10">
+              <button class="cancel btn-cancel" type="button">Cancel</button>
+            </div>
+
+            <div class="col-xs-12 col-xs-push-2">
+              <button class="btn-secondary save" type="button">Done</button>
+            </div>
+          </div>
+
+          <div class="min-los-message legal" style="display: none;">
+            This property requires a <span>1</span> night minimum stay. Please ${DATES}edit your dates${END} or ${SEARCH}find hotels nearby${END}
+          </div>
+        </div>
+      </div>
+
+      <div aria-describedby="roomsGuestsNavInstructions" class="rooms-and-guests-container rooms-and-guests-dropdown dropdown-container" data-button="" role="dialog"><span class="arrow-up"></span>
+        <div class="sr-only rooms-guests-nav" id="roomsGuestsNavInstructions"></div>
+
+        <div class="dropdown-overflow">
+          <div class="number-picker number-picker-rooms clearfix">
+            <span class="picker-label">Rooms</span>
+
+            <div class="number-wrapper">
+              <button class="subtract disabled" type="button">
+                <span aria-hidden="true">-</span>
+
+                <span class="sr-only"> Rooms</span>
+              </button>
+
+              <span aria-atomic="true" aria-live="polite" class="number rooms" data-max="9" data-min="1" itemprop="numberOfRooms" itemscope="" itemtype="http://schema.org/QuantitativeValue" type="text"><span itemprop="value" name="rooms">1</span><span class="sr-only rooms-label" itemprop="unitText">Rooms</span></span>
+
+              <button class="add" type="button">
+                <span aria-hidden="true">+</span>
+
+                <span ${properties.adaaddtext}="" ${properties.roomslabel}<="" class="sr-only" span="">
+              </span></button>
+            </div>
+            <div class="need-more-rooms">
+              <a href="https://www.wyndhamhotels.com/contact-us/group-travel-form">Need more than 9 rooms?</a>
+            </div>
+          </div>
+
+          <div class="number-picker number-picker-adults clearfix">
+            <span class="picker-label">Adults</span>
+
+            <div class="number-wrapper">
+              <button class="subtract disabled" type="button">
+                <span aria-hidden="true">-</span>
+
+                <span class="sr-only"> Adults</span>
+              </button>
+
+              <span aria-atomic="true" aria-live="polite" class="number guests adults" data-max="4" data-min="1" type="text"><span name="adults">1</span><span class="sr-only adults-label">Adults</span></span>
+
+              <button class="add" type="button">
+                <span aria-hidden="true">+</span>
+
+                <span class="sr-only"> Adults</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="number-picker number-picker-children clearfix">
+            <span class="picker-label">Children</span>
+
+            <div class="number-wrapper">
+              <button class="subtract disabled" type="button">
+                <span aria-hidden="true">-</span>
+                <span class="sr-only"> Children</span>
+              </button>
+
+              <span aria-atomic="true" aria-live="polite" class="number guests children" data-max="8" data-min="0" type="text"><span name="children">0</span><span class="sr-only children-label">Children</span></span>
+
+              <button class="add" type="button">
+                <span aria-hidden="true">+</span>
+                <span class="sr-only"> Children</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="child-age-selector-container" style="height: 0px;">
+            <div aria-hidden="true" class="child-age-selector-prompt">
+              Select the child's age
+            </div>
+
+            <input class="child-age-copy" name="child-age-copy" type="hidden" value="Child"/>
+
+            <input class="child-age-screen-reader" name="child-age-screen-reader" type="hidden"/>
+
+            <input class="child-age-max" name="child-age-max" type="hidden" value="17"/>
+          <div aria-hidden="true" class="dropdown child-age-selector child-age-1"><label class="child-age-label" for="childAge1">Child 1<span class="sr-only"></span></label><select class="child-age" id="childAge1" name="childAge1" tabindex="-1"><option selected="selected" value="0">&lt; 1</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option></select></div><div aria-hidden="true" class="dropdown child-age-selector child-age-2"><label class="child-age-label" for="childAge2">Child 2<span class="sr-only"></span></label><select class="child-age" id="childAge2" name="childAge2" tabindex="-1"><option selected="selected" value="0">&lt; 1</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option></select></div><div aria-hidden="true" class="dropdown child-age-selector child-age-3"><label class="child-age-label" for="childAge3">Child 3<span class="sr-only"></span></label><select class="child-age" id="childAge3" name="childAge3" tabindex="-1"><option selected="selected" value="0">&lt; 1</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option></select></div><div aria-hidden="true" class="dropdown child-age-selector child-age-4"><label class="child-age-label" for="childAge4">Child 4<span class="sr-only"></span></label><select class="child-age" id="childAge4" name="childAge4" tabindex="-1"><option selected="selected" value="0">&lt; 1</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option></select></div><div aria-hidden="true" class="dropdown child-age-selector child-age-5"><label class="child-age-label" for="childAge5">Child 5<span class="sr-only"></span></label><select class="child-age" id="childAge5" name="childAge5" tabindex="-1"><option selected="selected" value="0">&lt; 1</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option></select></div><div aria-hidden="true" class="dropdown child-age-selector child-age-6"><label class="child-age-label" for="childAge6">Child 6<span class="sr-only"></span></label><select class="child-age" id="childAge6" name="childAge6" tabindex="-1"><option selected="selected" value="0">&lt; 1</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option></select></div><div aria-hidden="true" class="dropdown child-age-selector child-age-7"><label class="child-age-label" for="childAge7">Child 7<span class="sr-only"></span></label><select class="child-age" id="childAge7" name="childAge7" tabindex="-1"><option selected="selected" value="0">&lt; 1</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option></select></div><div aria-hidden="true" class="dropdown child-age-selector child-age-8"><label class="child-age-label" for="childAge8">Child 8<span class="sr-only"></span></label><select class="child-age" id="childAge8" name="childAge8" tabindex="-1"><option selected="selected" value="0">&lt; 1</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option></select></div></div>
+
+          <div class="hidden-sm hidden-md save-cancel-container clearfix">
+            <div class="col-xs-10">
+              <button class="cancel btn-cancel" type="button">Cancel</button>
+            </div>
+
+            <div class="col-xs-12 col-xs-push-2">
+              <button class="btn-secondary save" type="button">Done</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div aria-describedby="moreOptionsNavInstructions" class="more-options-container more-options-dropdown dropdown-container" data-button="bookingBar__moreOptionsButton" role="dialog"><span class="arrow-up"></span>
+        <div class="sr-only" id="moreOptionsNavInstructions"></div>
+
+        <div class="dropdown-overflow">
+          <div class="wyndham-rewards-checkbox" data-label="Rewards Applied">
+            <div class="wyndham-rewards-checkbox-prompt headline-g">Wyndham Rewards Points</div>
+            <div class="checkbox">
+              <label>
+                <input class="wyndham-rewards-checkbox" data-parsley-multiple="wyndham-rewards" name="wyndham-rewards" type="checkbox"/>
+                <span><span>Use Wyndham Rewards points instead.</span></span>
+              </label>
+            </div>
+          </div>
+
+          <div class="specialty-rates-radio clearfix" data-label="Rate Applied">
+            <div class="specialty-rates-radio-prompt headline-g">Special Rates</div>
+
+            <div class="col-xs-24 col-sm-12">
+              <div class="specialty-rate-radio-container">
+                <div class="radio">
+                  <label>
+                    <input checked="checked" class="default" data-parsley-multiple="specialty-rates" name="specialty-rates" type="radio" value=""/>
+
+                    <span><span>None</span></span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="specialty-rate-radio-container">
+                <div class="radio">
+                  <label>
+                    <input data-corpcode="1000008323" data-parsley-multiple="specialty-rates" name="specialty-rates" type="radio" value="S3A"/>
+
+                    <span><span>AAA/CAA</span></span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="specialty-rate-radio-container">
+                <div class="radio">
+                  <label>
+                    <input data-corpcode="1000011084" data-parsley-multiple="specialty-rates" name="specialty-rates" type="radio" value="SGV"/>
+
+                    <span><span>Government/Per Diem</span></span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="specialty-rate-radio-container">
+                <div class="radio">
+                  <label>
+                    <input data-corpcode="1000022313" data-parsley-multiple="specialty-rates" name="specialty-rates" type="radio" value="SML"/>
+
+                    <span><span>Military/Veteran</span></span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="specialty-rate-radio-container">
+                <div class="radio">
+                  <label>
+                    <input data-corpcode="1000011086" data-parsley-multiple="specialty-rates" name="specialty-rates" type="radio" value="SSR"/>
+
+                    <span><span>Senior</span></span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="specialty-rate-radio-container">
+                <div class="radio">
+                  <label>
+                    <input data-corpcode="8000000046" data-parsley-multiple="specialty-rates" name="specialty-rates" type="radio" value="AARP"/>
+
+                    <span><span>AARP</span></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-24 col-sm-12 requires-code">
+              
+
+              <div class="specialty-rate-radio-container">
+                <div class="radio">
+                  <label>
+                    <input class="requires-code" data-parsley-multiple="specialty-rates" name="specialty-rates" type="radio" value="corpCode"/>
+
+                    <span><span>Corporate Code</span></span>
+
+                    <div class="code-container">
+                      <input class="code" placeholder="Enter Code" type="text"/>
+                    </div>
+                  </label>
+                </div>
+              </div>
+
+              <div class="specialty-rate-radio-container">
+                <div class="radio">
+                  <label>
+                    <input class="requires-code" data-parsley-multiple="specialty-rates" name="specialty-rates" type="radio" value="groupCode"/>
+
+                    <span><span>Group Code</span></span>
+
+                    <div class="code-container">
+                      <input class="code" placeholder="Enter Code" type="text"/>
+                    </div>
+                  </label>
+                </div>
+              </div>
+
+              
+            </div>
+          </div>
+
+          <div class="save-cancel-container clearfix">
+
+            <div class="col-xs-10">
+              <button class="cancel btn-cancel" type="button">Cancel</button>
+            </div>
+
+            <div class="col-xs-12 col-xs-push-2">
+              <button class="btn-secondary save" type="button">Done</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </nav>
+
+  <div class="booking-bar-collapsed container-fluid" id="bookingBarCollapsed" style="top: 158px;">
+    <div class="row">
+      <div class="col-xs-24">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-20 breadcrumb-col">
+              <div class="hotel-location-breadcrumb hidden-xs">
+	
+		<span class="brandName" hidden=""></span>
+
+		<span class="localePath" hidden=""></span>
+	
+
+	<ul class="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList" style="display: block;">
+		<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+			
+
+			<a href="https://www.wyndhamhotels.com/" itemprop="item">
+				
+
+				
+					<span itemprop="name">Home</span>
+				
+
+				<meta content="1" itemprop="position"/>
+			</a>
+		</li>
+	
+		<li class="brCityName" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+			
+				
+					<span itemprop="name">
+			
+				
+					 Hotels
+				
+
+				
+
+				
+			
+
+			
+		</span>
+				
+
+				
+
+				<meta content="2" itemprop="position"/>
+			
+
+			
+		</li>
+	</ul>
+</div>
+
+
+            </div>
+
+            <div class="dates-col" style="display: block;">
+              <span class="booking-dates">
+                <span class="check-in">
+                  <span class="date">Sat, Nov 07 2020</span>
+                </span> -
+
+                <span class="check-out">
+                  <span class="date">Sun, Nov 08 2020</span>
+                </span>
+              </span>
+            </div>
+
+            <div class="col-xs-4 toggle-container">
+              <a class="toggle" href="https://www.wyndhamhotels.com/hotels/illinois-usa?brand_id=ALL&amp;checkInDate=11/7/2020&amp;checkOutDate=11/8/2020&amp;useWRPoints=false&amp;children=0&amp;adults=1&amp;rooms=1&amp;loc=ChIJGSZubzgtC4gRVlkRZFCCFX8&amp;sessionId=1604790760#">Change Search</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
+2) <form autocomplete="off" data-parsley-validate="" id="wr-signin" method="POST" novalidate="">
+                    <div class="login-title login-non-rewards">
+                        <span class="headline-c" id="login-header">Sign In</span>
+                    </div>
+
+                    
+                    
+
+                    
+                    <div class="login-invalid-credentials error-msg-container error-msg" role="alert">
+                        <span>Username or password is invalid</span>
+                    </div>
+
+                    <div class="login-suspended-account error-msg-container error-msg" role="alert">
+                        <p>Your account has been suspended/closed. Please call Wyndham Rewards Member Services at (844) 405-4141</p>
+
+                    </div>
+
+                    <div class="login-locked-account error-msg-container error-msg" role="alert">
+                        <p>Your account has been locked. Please call Wyndham Rewards Member Services at (844) 405-4141</p>
+
+                    </div>
+
+                    <div class="login-general-error error-msg-container error-msg" role="alert">
+                    </div>
+
+                    
+                    <div class="login-username-default">
+                        <label class="form-label" for="wrUsername">Username</label>
+                        <input aria-required="true" autocapitalize="none" class="login-input" data-parsley-required-message="Please enter a username" id="wrUsername" maxlength="30" name="wrUsername" required="" type="text"/>
+                    </div>
+
+                    
+                    <div class="login-password-default">
+                        <label class="form-label" for="wrPassword">Password</label>
+                        <input aria-required="true" autocomplete="off" class="login-input" data-parsley-required-message="Please enter a password" id="wrPassword" name="wrPassword" required="" type="password"/>
+                    </div>
+
+                    <label class="login-remember-me checkbox" for="c2">
+                      <input checked="true" class="login-checkbox" data-parsley-multiple="c2" id="c2" name="c2" type="checkbox"/>
+                        
+                        <span class="login-checkbox-label">Remember me</span>
+                    </label>
+
+                    <button class="btn btn-primary login-button" id="signIn" type="submit">
+                        <div class="login-btn-text">Sign in</div>
+                    </button>
+
+                    
+                        <a class="login-forgot-password" href="https://www.wyndhamhotels.com/wyndham-rewards/forgot-username-password" target="_blank">
+                            Forgot Password?
+                        </a>
+                        
+                    
+
+                </form>
+3) <form autocomplete="off" class="login-wr-security-questions" data-parsley-validate="" id="login-wr-security-questions" method="POST" novalidate="">
+                  <div class="login-title">
+                    <span class="headline-c" id="secQuesAnswer">Security Question</span>
+                  </div>
+                  <div class="sq-intro">
+                    <p>You are seeing this message because your account security is important to us and we don't recognize the computer you are using to sign in. To continue please answer the following security validations questions.</p>
+<div><span class="legal"><i>NOTE: Your answers do not need to be case-sensitive. Answers entered in upper or lowercase are recognized as the same; however, you must use the exact format of your answer i.e. January 31, 2010 is not the same answer as 1/31/10.</i></span></div>
+
+                  </div>
+
+                  <div class="questions-container">
+                    <p class="prompt-question" id="securityQuestion">In what city or town did you meet your spouse/partner long question lorem ipsum dolor?</p>
+                    <div class="input-field-container">
+                      <label class="form-label" for="securityAnswer">Answer</label>
+                      <input aria-required="true" id="securityAnswer" name="secuityAnswer" required="" type="text"/>
+                    </div>
+                    <div class="login-invalid-security-answer error-msg-container error-msg" role="alert">
+                        <span>Security question answer does not match</span>
+                    </div>
+                    <div class="service-error error-msg" role="alert"></div>
+                  </div>
+
+                  <input id="securityId" type="hidden"/>
+                  <button class="btn-primary submit-btn" id="submit-button" type="submit">Submit</button>
+                </form>
+4) <form autocomplete="off" data-parsley-validate="" id="set-security-answers" method="POST" novalidate="">
+
+                      <div class="login-title">
+                          <span class="headline-c" id="secQuesSetup">Please Set Up Your Security Questions</span>
+                      </div>
+                      <div class="sq-intro">
+                        <p>In order to enhance the security of this site and help protect your privacy and identification, we require that you provide security questions and answers.</p>
+<div><span class="legal"><i>Please note the following:</i></span></div>
+<ul>
+<li><span class="legal"><i>You must answer 3 diferent security questions below.</i></span></li>
+<li><span class="legal"><i>Each question must have a different answer.</i></span></li>
+<li><span class="legal"><i>Your answers cannot contain any special characters (pincode and dashes are ok).</i></span></li>
+</ul>
+<p>All fields marked with an asterisk(*) are required.</p>
+
+                      </div>
+                      <div class="questions-container">
+                          <div class="prompt-set">
+                              <div class="question-input dropdown">
+                                  <label class="form-label" for="sqPrompt1">SECURITY QUESTION 1*</label>
+                                  <select aria-required="true" class="req-input" data-parsley-group="block-1" data-parsley-required-message="Please select your question from dropdown" data-parsley-three-way-compare="#sqPrompt2,#sqPrompt3" data-parsley-three-way-compare-message="Please select different question" id="sqPrompt1" name="sqPrompt1" required="">
+                                      <option disabled="" selected="" value="">Please select</option>
+                                      <option value="Q1">Question 1</option>
+                                      <option value="Q2">Question 2</option>
+                                      <option value="Q3">Question 3</option>
+                                      <optgroup></optgroup>
+                                  </select>
+                              </div>
+                              <div class="answer-input">
+                                  <label class="form-label" for="sqAnswer1">SECURITY ANSWER 1*</label>
+                                  <input accept="" aria-required="true" class="req-input" data-parsley-allowed-answer-characters="true" data-parsley-allowed-answer-characters-message="No special characters are supported" data-parsley-group="block-2" data-parsley-required-message="Please enter your answer to the question" data-parsley-three-way-compare="#sqAnswer2,#sqAnswer3" data-parsley-three-way-compare-message="Please select different answer" id="sqAnswer1" name="sqAnswer1" required="" type="text" value=""/>
+                              </div>
+                          </div>
+                          <div class="prompt-set">
+                              <div class="question-input dropdown">
+                                  <label class="form-label" for="sqPrompt2">SECURITY QUESTION 2*</label>
+                                  <select aria-required="true" class="req-input" data-parsley-group="block-1" data-parsley-required-message="Please select your question from dropdown" data-parsley-three-way-compare="#sqPrompt1,#sqPrompt3" data-parsley-three-way-compare-message="Please select different question" id="sqPrompt2" name="sqPrompt2" required="">
+                                      <option disabled="" selected="" value="">Please select</option>
+                                      <option value="Q1">Question 1</option>
+                                      <option value="Q2">Question 2</option>
+                                      <option value="Q3">Question 3</option>
+                                      <optgroup></optgroup>
+                                  </select>
+                              </div>
+                              <div class="answer-input">
+                                  <label class="form-label" for="sqAnswer2">SECURITY ANSWER 2*</label>
+                                  <input aria-required="true" class="req-input" data-parsley-allowed-answer-characters="true" data-parsley-allowed-answer-characters-message="No special characters are supported" data-parsley-group="block-2" data-parsley-required-message="Please enter your answer to the question" data-parsley-three-way-compare="#sqAnswer1,#sqAnswer3" data-parsley-three-way-compare-message="Please select different answer" id="sqAnswer2" name="sqAnswer2" required="" type="text" value=""/>
+                              </div>
+                          </div>
+                          <div class="prompt-set">
+                              <div class="question-input dropdown">
+                                  <label class="form-label" for="sqPrompt3">SECURITY QUESTION 3*</label>
+                                  <select aria-required="true" class="req-input" data-parsley-group="block-1" data-parsley-required-message="Please select your question from dropdown" data-parsley-three-way-compare="#sqPrompt1,#sqPrompt2" data-parsley-three-way-compare-message="Please select different question" id="sqPrompt3" name="sqPrompt3" required="">
+                                      <option disabled="" selected="" value="">Please select</option>
+                                      <option value="Q1">Question 1</option>
+                                      <option value="Q2">Question 2</option>
+                                      <option value="Q3">Question 3</option>
+                                      <optgroup></optgroup>
+                                  </select>
+                              </div>
+                              <div class="answer-input">
+                                  <label class="form-label" for="sqAnswer3">SECURITY ANSWER 3*</label>
+                                  <input aria-required="true" class="req-input" data-parsley-allowed-answer-characters="true" data-parsley-allowed-answer-characters-message="No special characters are supported" data-parsley-group="block-2" data-parsley-required-message="Please enter your answer to the question" data-parsley-three-way-compare="#sqAnswer1,#sqAnswer2" data-parsley-three-way-compare-message="Please select different answer" id="sqAnswer3" name="sqAnswer3" required="" type="text" value=""/>
+                              </div>
+                          </div>
+                      </div>
+                      <button class="btn-primary" id="set-questions" role="button" type="submit">Submit Answers</button>
+                  </form>
+5) <form class="review" id="confirm-answers-setup" method="POST">
+                      <div class="login-title">
+                          <span class="headline-c" id="secQuesConfirm">Please Review and Confirm Your Answers</span>
+                      </div>
+                      <div class="sq-intro">
+                        <p>Ensure that you have answered your security questions correctly and then click "Confirm Answers". If you need to make changes to your questions or answers, you may use the "Edit" Links.</p>
+<p>All fields marked with an asterisk(*) are required.</p>
+
+                      </div>
+                      <div class="service-error error-msg" role="alert"></div>
+                      <div class="questions-container">
+                          <div class="prompt-set">
+                              <div class="question-input">
+                                  <div class="form-label" for="sqConfirm1">SECURITY QUESTION 1*</div>
+                                  <div class="selected-prompt" id="sqConfirm1">
+                                    <span>In what city or town did you meet your spouse/partner?</span>
+                                    <a aria-label="Edit SECURITY QUESTION 1" href="https://www.wyndhamhotels.com/hotels/illinois-usa?brand_id=ALL&amp;checkInDate=11/7/2020&amp;checkOutDate=11/8/2020&amp;useWRPoints=false&amp;children=0&amp;adults=1&amp;rooms=1&amp;loc=ChIJGSZubzgtC4gRVlkRZFCCFX8&amp;sessionId=1604790760#">Edit</a>
+                                  </div>
+                              </div>
+                              <div class="answer-input">
+                                  <div class="form-label" for="sqConfirmAnswer1">SECURITY ANSWER 1*</div>
+                                  <div class="selected-answer" id="sqConfirmAnswer1">Chicago</div>
+                              </div>
+                          </div>
+                          <div class="prompt-set">
+                              <div class="question-input">
+                                  <div class="form-label" for="sqConfirm2">SECURITY QUESTION 2*</div>
+                                  <div class="selected-prompt" id="sqConfirm2">
+                                    <span>In what city or town does your nearest sibling live?</span>
+                                    <a aria-label="Edit SECURITY QUESTION 2" href="https://www.wyndhamhotels.com/hotels/illinois-usa?brand_id=ALL&amp;checkInDate=11/7/2020&amp;checkOutDate=11/8/2020&amp;useWRPoints=false&amp;children=0&amp;adults=1&amp;rooms=1&amp;loc=ChIJGSZubzgtC4gRVlkRZFCCFX8&amp;sessionId=1604790760#">Edit</a>
+                                  </div>
+                              </div>
+                              <div class="answer-input">
+                                  <div class="form-label" for="sqConfirmAnswer2">SECURITY ANSWER 2*</div>
+                                  <div class="selected-answer" id="sqConfirmAnswer2">Louisville</div>
+                              </div>
+                          </div>
+                          <div class="prompt-set">
+                              <div class="question-input">
+                                  <div class="form-label" for="sqConfirm3">SECURITY QUESTION 3*</div>
+                                  <div class="selected-prompt" id="sqConfirm3">
+                                    <span>In what city or town was your first job?</span>
+                                    <a aria-label="Edit SECURITY QUESTION 3" href="https://www.wyndhamhotels.com/hotels/illinois-usa?brand_id=ALL&amp;checkInDate=11/7/2020&amp;checkOutDate=11/8/2020&amp;useWRPoints=false&amp;children=0&amp;adults=1&amp;rooms=1&amp;loc=ChIJGSZubzgtC4gRVlkRZFCCFX8&amp;sessionId=1604790760#">Edit</a>
+                                  </div>
+                              </div>
+                              <div class="answer-input">
+                                  <div class="form-label" for="sqConfirmAnswer3">SECURITY ANSWER 3*</div>
+                                  <div class="selected-answer" id="sqConfirmAnswer3">New York</div>
+                              </div>
+                          </div>
+                      </div>
+                      <button class="btn-primary" id="confirmAnswers" type="submit">Confirm Answers</button>
+                  </form>
+6) <form action="https://www.tamgrt.com/RT" method="post" style="display: none;" target="ta06016342854722523"><iframe id="ta06016342854722523" name="ta06016342854722523" src="javascript:false"></iframe><input name="id" type="hidden" value="957860804"/><input name="event" type="hidden" value="PAGEVIEW"/><input name="pixel_version" type="hidden" value="2"/></form>

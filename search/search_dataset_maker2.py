@@ -19,7 +19,9 @@ import pandas as pd
 
 def make_dataset(html, features, dataset_path = r'search/search_dataset.csv'):
   feature_dict = {k: [] for k in features}
+  forms = []
   for form in html.findAll('form'):
+    forms.append(form)
 
     # has_search_attribute
     feature_dict = search_attributes_with_children(form, 'search', 'has_search_attribute', feature_dict)
@@ -37,9 +39,14 @@ def make_dataset(html, features, dataset_path = r'search/search_dataset.csv'):
     feature_dict = find_class(form, 'search_class', feature_dict)
     
  
-  pd.DataFrame(feature_dict).to_csv(dataset_path, mode= 'a', encoding= 'ISO-8859-1', header= False)
+  # data=pd.DataFrame(feature_dict)
+  # data.to_csv(dataset_path, mode= 'a', encoding= 'ISO-8859-1', header= False)
+  # with open(r'search/forms.txt', mode = 'w', encoding= 'ISO-8859-1') as f:
+  #   for item in forms:
+  #     f.write(f'{forms.index(item)}) {item}\n')
+  write_dataset(feature_dict, forms, dataset_path, r'search/forms.txt')
 
 # page = requests.get(url)
 if __name__ == '__main__':
   features = ['has_search_attribute', 'has_search_text', 'has_text_input', 'has_button', 'search_class']
-  launch_make_dataset(features, pd.DataFrame, make_dataset, dataset_path = r'search/search_dataset.csv')
+  launch_make_dataset(features, make_dataset, dataset_path = r'search/search_dataset.csv')

@@ -1,0 +1,65 @@
+0) <select class="child-age" id="childAge1" name="childAge1" tabindex="-1"><option selected="selected" value="0">&lt; 1</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option></select>
+1) <select class="child-age" id="childAge2" name="childAge2" tabindex="-1"><option selected="selected" value="0">&lt; 1</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option></select>
+2) <select class="child-age" id="childAge3" name="childAge3" tabindex="-1"><option selected="selected" value="0">&lt; 1</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option></select>
+3) <select class="child-age" id="childAge4" name="childAge4" tabindex="-1"><option selected="selected" value="0">&lt; 1</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option></select>
+4) <select class="child-age" id="childAge5" name="childAge5" tabindex="-1"><option selected="selected" value="0">&lt; 1</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option></select>
+5) <select class="child-age" id="childAge6" name="childAge6" tabindex="-1"><option selected="selected" value="0">&lt; 1</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option></select>
+6) <select class="child-age" id="childAge7" name="childAge7" tabindex="-1"><option selected="selected" value="0">&lt; 1</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option></select>
+7) <select class="child-age" id="childAge8" name="childAge8" tabindex="-1"><option selected="selected" value="0">&lt; 1</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option></select>
+8) <select aria-required="true" class="req-input" data-parsley-group="block-1" data-parsley-required-message="Please select your question from dropdown" data-parsley-three-way-compare="#sqPrompt2,#sqPrompt3" data-parsley-three-way-compare-message="Please select different question" id="sqPrompt1" name="sqPrompt1" required="">
+                                      <option disabled="" selected="" value="">Please select</option>
+                                      <option value="Q1">Question 1</option>
+                                      <option value="Q2">Question 2</option>
+                                      <option value="Q3">Question 3</option>
+                                      <optgroup></optgroup>
+                                  </select>
+9) <select aria-required="true" class="req-input" data-parsley-group="block-1" data-parsley-required-message="Please select your question from dropdown" data-parsley-three-way-compare="#sqPrompt1,#sqPrompt3" data-parsley-three-way-compare-message="Please select different question" id="sqPrompt2" name="sqPrompt2" required="">
+                                      <option disabled="" selected="" value="">Please select</option>
+                                      <option value="Q1">Question 1</option>
+                                      <option value="Q2">Question 2</option>
+                                      <option value="Q3">Question 3</option>
+                                      <optgroup></optgroup>
+                                  </select>
+10) <select aria-required="true" class="req-input" data-parsley-group="block-1" data-parsley-required-message="Please select your question from dropdown" data-parsley-three-way-compare="#sqPrompt1,#sqPrompt2" data-parsley-three-way-compare-message="Please select different question" id="sqPrompt3" name="sqPrompt3" required="">
+                                      <option disabled="" selected="" value="">Please select</option>
+                                      <option value="Q1">Question 1</option>
+                                      <option value="Q2">Question 2</option>
+                                      <option value="Q3">Question 3</option>
+                                      <optgroup></optgroup>
+                                  </select>
+11) <select aria-required="true" data-attribute="sort" id="sort-by">
+        <option value="DIS">Distance</option>
+      
+        <option value="PHL">Price - High to Low</option>
+      
+        <option value="PLH">Price - Low to High</option>
+      </select>
+12) <select class="view-toggle-button mobile-search-tabs" data-id="sort-by-wrapper" role="button" style="visibility: visible;" tabindex="0">
+    <option>Sort</option>
+    
+      <option value="DIS">Distance</option>
+    
+      <option value="PHL">Price - High to Low</option>
+    
+      <option value="PLH">Price - Low to High</option>
+    
+  </select>
+13) <select aria-labelledby="distanceSelectLabel" autocomplete="off" id="distanceMin">
+                    <option tabindex="1">Select Option</option>
+                    
+                        <option value="5">5 Miles
+                        </option>
+                    
+                        <option value="10">10 Miles
+                        </option>
+                    
+                        <option value="25">25 Miles
+                        </option>
+                    
+                        <option value="50">50 Miles
+                        </option>
+                    
+                        <option value="100">100 Miles
+                        </option>
+                    
+                </select>
