@@ -17,17 +17,18 @@ def fetch_html(path):
                         # print('entry2: ',entry2.path)
                         yield entry2.path
 
-def launch_make_dataset(features, make_dataset, raw_data_path = r'Insupport-dataset', dataset_path = None):
+def launch_make_dataset(features, make_dataset, raw_data_path = r'Insupport-dataset', dataset_path = None, header_csv_mode = 'w', **kwargs):
     ''' Launches make_dataset function in dataset_maker. '''
-    pd.DataFrame(columns= features).to_csv(dataset_path, mode= 'w', encoding= 'ISO-8859-1')
+    if header_csv_mode:
+      pd.DataFrame(columns= features).to_csv(dataset_path, mode= header_csv_mode, encoding= 'ISO-8859-1')
     for url in fetch_html(raw_data_path):
       # print('url: ',url)
       with open(url, encoding='ISO-8859-1') as page:
         html = bs.BeautifulSoup(page, features = 'html5lib')
       if dataset_path:
-        make_dataset(html, features, dataset_path)
+        make_dataset(html, features, dataset_path, **kwargs)
       else:
-        make_dataset(html, features)
+        make_dataset(html, features, **kwargs)
 
 def search_attributes_with_children(element, search_value, feature, feature_dict):
     ''' Searches for the search_value in attributes of element and its children and updates the feature in feature_dict.
@@ -76,7 +77,7 @@ def find_child_number(element, child, feature, feature_dict):
     ''' Find number of 'child' elements in element's children and updates feature_dict.
     returns the updated feature_dict.  '''
     feature_dict[feature].append(0)
-    for button in element.findAll(child):
+    for c in element.findAll(child):
         feature_dict[feature][-1] += 1
     return feature_dict
 
@@ -126,12 +127,36 @@ def search_previous_label(element, search_value, feature, feature_dict):
           return feature_dict
     return feature_dict
 
+def find_common_url_number(html, element, feature, feature_dict):
+    ''' Count common urls and update the feature_dict. Returns the updated feature_dict. '''
+    feature_dict[feature].append(0)
+    inner_urls = []
+    all_urls = []
+    for a in element.findAll('a'):
+        inner_urls.append(a.get('href'))
+    for a in html.findAll('a'):
+      all_urls.append(a.get('href'))
+    # print('diff: ',len(set(all_urls).difference(set(inner_urls))))
+    # print('diff: ',len(all_urls) - len(set(all_urls).difference(set(inner_urls))))
+    # feature_dict[-1] = len(all_urls) - len(set(all_urls).difference(set(inner_urls)))
+    s = set(inner_urls)
+    outer_urls = [u for u in all_urls if u not in s]
+    # print(' -: ',len(all_urls)-len(outer_urls))
+    feature_dict[feature][-1] = len(all_urls)-len(outer_urls)
+    return feature_dict
+
+
 def write_dataset(feature_dict, log_list, dataset_path, log_path):
   data=pd.DataFrame(feature_dict)
+  data = data.loc[~(data == 0).all(axis = 1)]
+  # print('data:\n',data)
   data.to_csv(dataset_path, mode= 'a', encoding= 'ISO-8859-1', header= False)
-  with open(log_path, mode = 'w', encoding= 'ISO-8859-1') as f:
-    for item in log_list:
-      f.write(f'{log_list.index(item)}) {item}\n')
+  try:
+    with open(log_path, mode = 'w', encoding= 'ISO-8859-1') as f:
+      for item in log_list:
+        f.write(f'{log_list.index(item)}) {item}\n')
+  except:
+    print('...couldn\'t create log file...')
 
 def func_map(feature, element, feature_dict):
 
@@ -158,4 +183,12 @@ if __name__ == '__main__':
     path = r'C:\assignments\cs733-nlp\web-page-summarizer\Insupport-dataset'
     # fetch_file = fetch_file()
     for f in fetch_html(path):
+      if 'glove' in f:
         print('fetched: ',f)
+        break
+    urls = [r'https://www.ecrater.com/filter.php?a=1&amp;keywords=gloves&amp;srn=1', r"https://www.ecrater.com/filter.php?a=1&amp;keywords=gloves&amp;srn=2", r"https://www.ecrater.com/filter.php?a=1&amp;keywords=gloves&amp;srn=3", r"https://www.ecrater.com/filter.php?a=1&amp;keywords=gloves&amp;srn=4"]
+    
+    html = bs.BeautifulSoup(f)
+    page = html.findAll('div', attrs = {'data-attribute' : 'page'})
+    print('page: ',page)
+    find_common_url_number(page[0], urls, {})
